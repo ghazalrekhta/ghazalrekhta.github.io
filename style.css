@@ -159,3 +159,13 @@ footer{padding-bottom:calc(64px + env(safe-area-inset-bottom))}
 
 footer .owner{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.05rem;color:var(--muted);margin:14px 0 4px;letter-spacing:.02em}
 footer .owner span{color:var(--gold);font-style:normal;font-weight:600;letter-spacing:.06em}
+
+/* inline hero music button */
+.mu.mu-inline{position:static;justify-content:center;margin:18px auto 4px;pointer-events:auto;flex-direction:column;gap:8px}
+.mu.mu-inline .mu-btn{width:auto;height:44px;padding:0 20px 0 16px;border-radius:999px;gap:10px;background:rgba(12,8,9,.45);border:1px solid var(--hl-border,rgba(230,194,122,.45));font:500 .9rem/1 Inter,system-ui,sans-serif;letter-spacing:.06em;box-shadow:0 0 18px var(--title-glow,rgba(230,194,122,.18))}
+.mu.mu-inline .mu-lbl{color:var(--gold);white-space:nowrap}
+.mu.mu-inline .mu-btn svg{width:18px;height:18px}
+.mu.mu-inline .mu-btn::after{border-radius:999px}
+.mu.mu-inline .mu-tip{display:none}
+@media (hover:none),(max-width:759px){.mu.mu-inline .mu-btn{background:rgba(12,8,9,.5)}}
+:root[data-theme="ivory"] .mu.mu-inline .mu-btn{background:rgba(250,244,230,.8)}
